@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+      <title>What the Internet is Saying About Rape</title>
+
+      <meta charset="UTF-8"/>
+      <meta name="robots" content="index, follow"/>
+      <meta name="description" content="Issam Zeibak is an awesome developer, who knew!"/>
+      <meta name="author" content="Issam Zeibak"/>
+
+      <meta name="HandheldFriendly" content="true"/>
+      <meta name="MobileOptimized" content="320"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+
+      <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,900" type="text/css" media="screen"/>
+      <link rel="stylesheet" href="{{ STATIC_URL }}public/css/mfizz.css" type="text/css" media="screen"/>
+      <link rel="stylesheet" href="{{ STATIC_URL }}/public/css/base.css" type="text/css" media="screen"/>
+      <!-- CSS-->
+      <link href="{{ STATIC_URL }}materialize/css/prism.css" rel="stylesheet">
+      <link href="{{ STATIC_URL }}materialize/css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+      <link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+      {% include "templates/comments/navbar.html" %}
+      {% block about %}{% endblock %}
+      {% block category %}{% endblock %}
+
+    </body>
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="{{ STATIC_URL }}public/js/main.js"></script>
+      <script type="text/javascript" src="{{ STATIC_URL }}materialize/js/prism.js"></script>
+      <script type="text/javascript" src="{{ STATIC_URL }}materialize/js/collapsible.js"></script>
+      <script type="text/javascript" src="{{ STATIC_URL }}materialize/js/jquery.easing.1.3.js"></script>
+</html>

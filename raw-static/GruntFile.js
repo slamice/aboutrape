@@ -34,7 +34,7 @@ module.exports = function(grunt) {
       },
       build: {
         src: 'materialize-src/js/*.js',
-        dest: '../static/js/test.min.js'
+        dest: '../static/js/aboutrape.min.js'
       }
     }
   });

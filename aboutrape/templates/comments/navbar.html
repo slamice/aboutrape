@@ -1,0 +1,25 @@
+{% block navbar %}
+
+<!-- extend base layout -->
+<header>
+        <div class="container"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav full"><i class="mdi-navigation-menu"></i></a></div>
+        <ul id="nav-mobile" class="side-nav fixed">
+          <li class="logo"><a id="logo-container" href="http://materializecss.com/" class="brand-logo">
+              <object id="front-page-logo" type="image/svg+xml" data="res/materialize.svg">Your browser does not support SVG</object></a></li>
+          <li class="bold"><a href="/" class="waves-effect waves-teal">About</a></li>
+          <li class="no-padding">
+            <ul class="collapsible collapsible-accordion">
+              <li class="bold"><a class="collapsible-header waves-effect waves-teal">Categories</a>
+                <div class="collapsible-body navbar">
+                  <ul>
+                   {% for category in categories %}
+                     <li><a href="{% url 'category' category.id %}">{{ category.name }}</a></li>
+                   {% endfor %}
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </header>
+{% endblock %}
