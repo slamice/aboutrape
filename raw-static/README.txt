@@ -1,0 +1,1 @@
+Put all your text files in here and Grunt should grunt them out to the static directory.

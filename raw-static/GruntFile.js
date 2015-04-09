@@ -16,15 +16,11 @@ module.exports = function(grunt) {
     },
 
     sass: {
-      dist: {
-        options: {
-          style: 'expanded', //'compressed',
-          compass: true
-        },
-        files: {
-          '../static/css/style.css': '../static/css/aboutrape.css'
+        dist: {
+            files: {
+                '../static/css/aboutrape.css': 'materialize-src/sass/materialize.scss',
+            }
         }
-      }
     },
 
     // Uglify
