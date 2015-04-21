@@ -23,9 +23,10 @@
         <p class="caption col s12">{{ category.description }}</p>
       </div>
     </div>
-
   </div>
-
+      {% for comment in comments %}
+         <blockquote>{{ comment.body }}</blockquote>
+      {% endfor %}
   </div>
 
 

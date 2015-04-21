@@ -8,11 +8,13 @@
           <li class="bold"><a href="/" class="waves-effect waves-teal">About</a></li>
           <li class="no-padding">
             <ul class="collapsible collapsible-accordion">
-              <li class="bold"><a class="collapsible-header waves-effect waves-teal">Categories</a>
+              <li class="bold"><a class="collapsible-header  {% if category.id %} active {% endif %}waves-effect waves-teal">Categories</a>
                 <div class="collapsible-body navbar">
                   <ul>
-                   {% for category in categories %}
-                     <li><a href="{% url 'category' category.id %}">{{ category.name }}</a></li>
+                   {% for cat in categories %}
+                     <li {% if cat.id == category.id %} class="active"{% endif %}>
+                        <a href="{% url 'category' cat.id %}">{{ cat.name }}</a>
+                      </li>
                    {% endfor %}
                   </ul>
                 </div>

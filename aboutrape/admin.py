@@ -1,5 +1,5 @@
 from django.contrib import admin
-from comments.models import Category, Comment, UserProfile
+from comments.models import Category, Comment
 
 class CategoryAdmin(admin.ModelAdmin):
   search_fields = ('name', )
@@ -11,4 +11,3 @@ class CommentAdmin(admin.ModelAdmin):
 
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Comment, CommentAdmin)
-admin.site.register(UserProfile)
