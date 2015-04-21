@@ -1,5 +1,5 @@
 from django.contrib import admin
-from comments.models import Category, Comment
+from aboutrape.models import Category, Comment
 
 class CategoryAdmin(admin.ModelAdmin):
   search_fields = ('name', )
