@@ -2,10 +2,12 @@ from django.contrib import admin
 from aboutrape.models import Category, Comment
 
 class CategoryAdmin(admin.ModelAdmin):
-  search_fields = ('__unicode__', 'name',)
+  list_display = ('__unicode__', 'name',)
+  search_fields = ('name', )
   ordering = ('name',)
 
 class CommentAdmin(admin.ModelAdmin):
+  list_display = ('__unicode__', 'body',)
   search_fields = ('body', )
   raw_id_fields = ('category',)
 
